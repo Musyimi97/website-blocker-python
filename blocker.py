@@ -2,7 +2,7 @@ import time
 from datetime import datetime as dt
 
 hosts_temp= 'hosts'
-hosts_path = r'C:\Windows\System32\drivers \ etc\ hosts'
+hosts_path = r'C:\Windows\System32\drivers \ etc\ hosts' or r'/etc/hosts'
 redirect= '127.0.0.1'
 sites_that_kill_me=['www.facebook.com','www.whatsapp.com','www.pintrest.com','www.instagram.com','www.snapchat.com']
 print(dt.now())
