@@ -8,7 +8,7 @@ sites_that_kill_me=['www.facebook.com','www.whatsapp.com','www.pintrest.com','ww
 print(dt.now())
 
 while True:
-    if dt(dt.now().year,dt.now().month,dt.now().day,9) < dt.now()< dt(dt.now().year,dt.now().month,dt.now().day,17):
+    if dt(dt.now().year,dt.now().month,dt.now().day,9) < dt.now()< dt(dt.now().year,dt.now().month,dt.now().day,21):
         print('Working Hours: ')
 
         with open(hosts_path, '+r') as file:
@@ -27,4 +27,4 @@ while True:
                     file.write(lines)
             file.truncate()
         print('time to play!!!')
-    time.sleep(600)
+    time.sleep(5)
