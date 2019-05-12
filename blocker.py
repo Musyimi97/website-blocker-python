@@ -17,10 +17,14 @@ while True:
                 if site in content:
                     pass
                 else:
-                    file.write(redirect+ ''+site+'\n')
+                    file.write(redirect+ ' '+site+'\n')
     else:
         with open(hosts_path,'r+') as file:
             content = file.readlines()
             file.seek(0)
             for lines in content:
-                pass
+                if  not any(site in lines for site in sites_that_kill_me):
+                    file.write(lines)
+            file.truncate()
+        print('time to play!!!')
+    time.sleep(600)
